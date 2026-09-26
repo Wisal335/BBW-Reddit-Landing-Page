@@ -1,2208 +1,2001 @@
 ---
+import Layout from "../layouts/Layout.astro";
 import "../styles/style.css";
 ---
 
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    />
-
-    <meta
-        name="description"
-        content="A technical analysis of manual business workflows, automation pipelines, system bottlenecks, and operational failure points."
-    />
-
-    <meta
-        name="theme-color"
-        content="#0b0f14"
-    />
-
-    <title>
-        Technical Systems Analysis | Big Brain Way
-    </title>
-</head>
-
-
-<body>
-
-<!-- =========================================================
-     READING PROGRESS
-========================================================= -->
-
-<div
-    class="reading-progress"
-    id="readingProgress"
-    aria-hidden="true"
-></div>
-
-
-<!-- =========================================================
-     TOP TECHNICAL BAR
-========================================================= -->
-
-<header class="site-header">
-
-    <div class="container header-inner">
-
-        <a
-            href="#top"
-            class="brand"
-            aria-label="Big Brain Way — return to top"
-        >
-
-            <img
-                src="/image/BBW Logo.png"
-                alt="Big Brain Way"
-                class="brand-logo"
-            />
-
-            <span class="brand-divider"></span>
-
-            <span class="brand-context">
-                SYSTEMS ANALYSIS
-            </span>
-
-        </a>
-
-
-        <div class="header-status">
-
-            <span class="status-indicator"></span>
-
-            <span>
-                TECHNICAL RESOURCE
-            </span>
-
-        </div>
-
-    </div>
-
-</header>
-
-
-
-<!-- =========================================================
-     MAIN
-========================================================= -->
-
-<main id="top">
-
-
-<!-- =========================================================
-     HERO
-========================================================= -->
-
-<section
-    class="hero technical-section"
-    data-section="introduction"
+<Layout
+    title="Technical Systems Analysis | Big Brain Way"
+    description="A technical analysis of manual business workflows, automation pipelines, system bottlenecks, and operational failure points."
 >
 
-    <div class="container hero-grid">
+    <!-- =========================================================
+         READING PROGRESS
+    ========================================================= -->
 
+    <div
+        class="reading-progress"
+        id="readingProgress"
+        aria-hidden="true"
+    ></div>
 
-        <div class="hero-copy">
 
-            <div
-                class="eyebrow"
-                data-reveal
-            >
-                TECHNICAL SYSTEMS ANALYSIS
-            </div>
+    <!-- =========================================================
+         TOP TECHNICAL BAR
+    ========================================================= -->
 
+    <header class="site-header">
 
-            <h1
-                class="hero-title"
-                data-reveal
-            >
-                Where Does Your
-                <span>Workflow</span>
-                Break?
-            </h1>
-
-
-            <p
-                class="hero-description"
-                data-reveal
-            >
-                A technical comparison of manual business processes
-                and automated pipelines — from initial input to
-                final output.
-            </p>
-
-
-            <div
-                class="hero-note"
-                data-reveal
-            >
-
-                <span class="note-marker">
-                    /
-                </span>
-
-                <span>
-                    No pitch. No form. Just the system.
-                </span>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- HERO SYSTEM MAP -->
-
-        <div
-            class="hero-system"
-            data-reveal
-            aria-label="Workflow system overview"
-        >
-
-            <div class="system-window">
-
-                <div class="window-header">
-
-                    <div class="window-dots">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-
-                    <span class="window-label">
-                        workflow.map
-                    </span>
-
-                    <span class="window-status">
-                        ACTIVE
-                    </span>
-
-                </div>
-
-
-                <div class="system-body">
-
-                    <div class="system-node input-node">
-                        <span class="node-index">01</span>
-                        <strong>INPUT</strong>
-                        <small>lead / request</small>
-                    </div>
-
-
-                    <div class="system-connector">
-                        <span></span>
-                    </div>
-
-
-                    <div class="system-node">
-                        <span class="node-index">02</span>
-                        <strong>PROCESS</strong>
-                        <small>human decision</small>
-                    </div>
-
-
-                    <div class="system-connector">
-                        <span></span>
-                    </div>
-
-
-                    <div class="system-node">
-                        <span class="node-index">03</span>
-                        <strong>TRANSFER</strong>
-                        <small>copy / paste</small>
-                    </div>
-
-
-                    <div class="system-connector">
-                        <span></span>
-                    </div>
-
-
-                    <div class="system-node output-node">
-                        <span class="node-index">04</span>
-                        <strong>OUTPUT</strong>
-                        <small>action / result</small>
-                    </div>
-
-                </div>
-
-
-                <div class="system-footer">
-
-                    <span>
-                        PATH: MANUAL
-                    </span>
-
-                    <span>
-                        FRICTION: DETECTABLE
-                    </span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <div class="container hero-meta">
-
-        <div class="meta-item">
-            <span>DOCUMENT</span>
-            <strong>01 / 06</strong>
-        </div>
-
-        <div class="meta-item">
-            <span>SUBJECT</span>
-            <strong>OPERATIONS</strong>
-        </div>
-
-        <div class="meta-item">
-            <span>METHOD</span>
-            <strong>SYSTEM MAPPING</strong>
-        </div>
-
-        <div class="meta-item">
-            <span>STATUS</span>
-            <strong>ANALYSIS</strong>
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     INTRODUCTION
-========================================================= -->
-
-<section
-    class="intro-section technical-section"
-    data-section="context"
->
-
-    <div class="container intro-grid">
-
-
-        <div
-            class="section-index"
-            data-reveal
-        >
-            <span>01</span>
-            <span>CONTEXT</span>
-        </div>
-
-
-        <div class="intro-content">
-
-            <h2
-                class="section-title"
-                data-reveal
-            >
-                Most operational problems
-                are not people problems.
-                They are <em>system problems.</em>
-            </h2>
-
-
-            <div
-                class="intro-columns"
-                data-reveal
-            >
-
-                <p>
-                    A workflow can appear simple from the outside:
-                    receive information, make a decision, update a
-                    system, notify someone, and move to the next task.
-                </p>
-
-                <p>
-                    But when those transitions depend on manual
-                    intervention, every handoff introduces another
-                    opportunity for delay, duplication, omission,
-                    or inconsistent execution.
-                </p>
-
-            </div>
-
-
-            <div
-                class="technical-callout"
-                data-reveal
-            >
-
-                <span class="callout-symbol">
-                    &gt;_
-                </span>
-
-                <div>
-
-                    <strong>
-                        The useful question is not:
-                    </strong>
-
-                    <p>
-                        "Can this task be automated?"
-                    </p>
-
-                    <strong>
-                        The better question is:
-                    </strong>
-
-                    <p>
-                        "Where does information change state,
-                        and what is responsible for that transition?"
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     COMPARISON TABLE
-========================================================= -->
-
-<section
-    class="comparison-section technical-section"
-    id="comparison"
-    data-section="comparison"
->
-
-    <div class="container">
-
-
-        <div class="section-heading">
-
-            <div
-                class="section-index"
-                data-reveal
-            >
-                <span>02</span>
-                <span>PROCESS ANALYSIS</span>
-            </div>
-
-
-            <div class="heading-content">
-
-                <p
-                    class="section-kicker"
-                    data-reveal
-                >
-                    MANUAL VS AUTOMATED
-                </p>
-
-                <h2
-                    class="section-title"
-                    data-reveal
-                >
-                    Same business process.
-                    Different system architecture.
-                </h2>
-
-                <p
-                    class="section-intro"
-                    data-reveal
-                >
-                    Select or hover over a row to inspect where
-                    manual intervention introduces friction and
-                    how the equivalent automated pipeline handles
-                    the same state transition.
-                </p>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- TABLE CONTROLS -->
-
-        <div
-            class="comparison-controls"
-            data-reveal
-            role="group"
-            aria-label="Comparison filters"
-        >
-
-            <button
-                class="comparison-filter active"
-                type="button"
-                data-filter="all"
-                aria-pressed="true"
-            >
-                ALL PROCESSES
-            </button>
-
-            <button
-                class="comparison-filter"
-                type="button"
-                data-filter="input"
-                aria-pressed="false"
-            >
-                INPUT
-            </button>
-
-            <button
-                class="comparison-filter"
-                type="button"
-                data-filter="logic"
-                aria-pressed="false"
-            >
-                LOGIC
-            </button>
-
-            <button
-                class="comparison-filter"
-                type="button"
-                data-filter="action"
-                aria-pressed="false"
-            >
-                ACTION
-            </button>
-
-            <button
-                class="comparison-filter"
-                type="button"
-                data-filter="output"
-                aria-pressed="false"
-            >
-                OUTPUT
-            </button>
-
-        </div>
-
-
-
-        <!-- COMPARISON TABLE -->
-
-        <div
-            class="comparison-wrapper"
-            data-reveal
-        >
-
-            <table class="comparison-table">
-
-                <caption>
-                    Manual business operations compared with
-                    automated pipeline architecture.
-                </caption>
-
-
-                <thead>
-
-                    <tr>
-
-                        <th scope="col">
-                            PROCESS
-                        </th>
-
-                        <th
-                            scope="col"
-                            class="manual-column"
-                        >
-                            MANUAL
-                            <span>
-                                HUMAN-DEPENDENT
-                            </span>
-                        </th>
-
-                        <th
-                            scope="col"
-                            class="friction-column"
-                        >
-                            FRICTION
-                            <span>
-                                FAILURE SURFACE
-                            </span>
-                        </th>
-
-                        <th
-                            scope="col"
-                            class="automated-column"
-                        >
-                            AUTOMATED
-                            <span>
-                                PIPELINE
-                            </span>
-                        </th>
-
-                    </tr>
-
-                </thead>
-
-
-                <tbody>
-
-
-                    <!-- ROW 01 -->
-
-                    <tr
-                        data-category="input"
-                        data-process="lead-intake"
-                        tabindex="0"
-                    >
-
-                        <th scope="row">
-
-                            <span class="row-number">
-                                01
-                            </span>
-
-                            Lead intake
-
-                        </th>
-
-                        <td class="manual-cell">
-
-                            Monitor inbox,
-                            forms, messages or calls.
-
-                        </td>
-
-                        <td class="friction-cell">
-
-                            Information can arrive
-                            through disconnected channels.
-
-                        </td>
-
-                        <td class="automated-cell">
-
-                            Trigger captures incoming
-                            event and normalizes payload.
-
-                        </td>
-
-                    </tr>
-
-
-                    <!-- ROW 02 -->
-
-                    <tr
-                        data-category="input"
-                        data-process="data-entry"
-                        tabindex="0"
-                    >
-
-                        <th scope="row">
-
-                            <span class="row-number">
-                                02
-                            </span>
-
-                            Data entry
-
-                        </th>
-
-                        <td class="manual-cell">
-
-                            Employee reads information
-                            and re-enters it elsewhere.
-
-                        </td>
-
-                        <td class="friction-cell">
-
-                            Duplicate work creates
-                            transcription risk.
-
-                        </td>
-
-                        <td class="automated-cell">
-
-                            Structured payload moves
-                            directly between systems.
-
-                        </td>
-
-                    </tr>
-
-
-                    <!-- ROW 03 -->
-
-                    <tr
-                        data-category="logic"
-                        data-process="qualification"
-                        tabindex="0"
-                    >
-
-                        <th scope="row">
-
-                            <span class="row-number">
-                                03
-                            </span>
-
-                            Qualification
-
-                        </th>
-
-                        <td class="manual-cell">
-
-                            Employee checks criteria
-                            and decides what happens next.
-
-                        </td>
-
-                        <td class="friction-cell">
-
-                            Decision logic may vary
-                            between employees.
-
-                        </td>
-
-                        <td class="automated-cell">
-
-                            Conditions evaluate structured
-                            data against defined rules.
-
-                        </td>
-
-                    </tr>
-
-
-                    <!-- ROW 04 -->
-
-                    <tr
-                        data-category="action"
-                        data-process="follow-up"
-                        tabindex="0"
-                    >
-
-                        <th scope="row">
-
-                            <span class="row-number">
-                                04
-                            </span>
-
-                            Follow-up
-
-                        </th>
-
-                        <td class="manual-cell">
-
-                            Employee remembers,
-                            writes and sends response.
-
-                        </td>
-
-                        <td class="friction-cell">
-
-                            Response timing depends
-                            on human availability.
-
-                        </td>
-
-                        <td class="automated-cell">
-
-                            Event triggers predefined
-                            response or task creation.
-
-                        </td>
-
-                    </tr>
-
-
-                    <!-- ROW 05 -->
-
-                    <tr
-                        data-category="action"
-                        data-process="crm-update"
-                        tabindex="0"
-                    >
-
-                        <th scope="row">
-
-                            <span class="row-number">
-                                05
-                            </span>
-
-                            CRM update
-
-                        </th>
-
-                        <td class="manual-cell">
-
-                            Employee copies details
-                            into the CRM.
-
-                        </td>
-
-                        <td class="friction-cell">
-
-                            CRM state can become
-                            inconsistent with source data.
-
-                        </td>
-
-                        <td class="automated-cell">
-
-                            API request creates or updates
-                            the record programmatically.
-
-                        </td>
-
-                    </tr>
-
-
-                    <!-- ROW 06 -->
-
-                    <tr
-                        data-category="action"
-                        data-process="quote"
-                        tabindex="0"
-                    >
-
-                        <th scope="row">
-
-                            <span class="row-number">
-                                06
-                            </span>
-
-                            Quote generation
-
-                        </th>
-
-                        <td class="manual-cell">
-
-                            Employee gathers inputs,
-                            calculates and prepares document.
-
-                        </td>
-
-                        <td class="friction-cell">
-
-                            Repeated preparation increases
-                            process variability.
-
-                        </td>
-
-                        <td class="automated-cell">
-
-                            Validated inputs populate
-                            a predefined generation pipeline.
-
-                        </td>
-
-                    </tr>
-
-
-                    <!-- ROW 07 -->
-
-                    <tr
-                        data-category="output"
-                        data-process="notification"
-                        tabindex="0"
-                    >
-
-                        <th scope="row">
-
-                            <span class="row-number">
-                                07
-                            </span>
-
-                            Notification
-
-                        </th>
-
-                        <td class="manual-cell">
-
-                            Employee informs the
-                            next person or team.
-
-                        </td>
-
-                        <td class="friction-cell">
-
-                            Handoffs can become
-                            invisible queue points.
-
-                        </td>
-
-                        <td class="automated-cell">
-
-                            System emits event,
-                            message or task automatically.
-
-                        </td>
-
-                    </tr>
-
-
-                    <!-- ROW 08 -->
-
-                    <tr
-                        data-category="output"
-                        data-process="reporting"
-                        tabindex="0"
-                    >
-
-                        <th scope="row">
-
-                            <span class="row-number">
-                                08
-                            </span>
-
-                            Reporting
-
-                        </th>
-
-                        <td class="manual-cell">
-
-                            Data is collected,
-                            cleaned and assembled periodically.
-
-                        </td>
-
-                        <td class="friction-cell">
-
-                            Reporting becomes a
-                            second process to maintain.
-
-                        </td>
-
-                        <td class="automated-cell">
-
-                            Events are logged as they occur
-                            and can feed a live data layer.
-
-                        </td>
-
-                    </tr>
-
-
-                </tbody>
-
-            </table>
-
-        </div>
-
-
-
-        <!-- ROW DETAIL PANEL -->
-
-        <aside
-            class="process-inspector"
-            id="processInspector"
-            aria-live="polite"
-            data-reveal
-        >
-
-            <div class="inspector-label">
-                SELECTED PROCESS
-            </div>
-
-            <div class="inspector-content">
-
-                <strong id="inspectorTitle">
-                    Lead intake
-                </strong>
-
-                <p id="inspectorDescription">
-                    Select a process row to inspect its
-                    technical transition.
-                </p>
-
-            </div>
-
-            <div class="inspector-code">
-
-                <span>STATE</span>
-
-                <code id="inspectorCode">
-                    INPUT → PROCESS
-                </code>
-
-            </div>
-
-        </aside>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     FRICTION ANALYSIS
-========================================================= -->
-
-<section
-    class="metrics-section technical-section"
-    data-section="friction"
->
-
-    <div class="container">
-
-
-        <div class="section-heading">
-
-            <div
-                class="section-index"
-                data-reveal
-            >
-                <span>03</span>
-                <span>FRICTION ANALYSIS</span>
-            </div>
-
-
-            <div class="heading-content">
-
-                <p
-                    class="section-kicker"
-                    data-reveal
-                >
-                    WHERE WORK ACCUMULATES
-                </p>
-
-                <h2
-                    class="section-title"
-                    data-reveal
-                >
-                    Every manual handoff
-                    creates another surface
-                    for failure.
-                </h2>
-
-            </div>
-
-        </div>
-
-
-
-        <div
-            class="metric-grid"
-            data-reveal
-        >
-
-
-            <article
-                class="metric-card"
-                data-metric="handoffs"
-            >
-
-                <div class="metric-top">
-
-                    <span>
-                        SIGNAL / 01
-                    </span>
-
-                    <span>
-                        HUMAN
-                    </span>
-
-                </div>
-
-                <div class="metric-value">
-                    H
-                </div>
-
-                <h3>
-                    HANDOFFS
-                </h3>
-
-                <p>
-                    Every transfer between people,
-                    inboxes, spreadsheets or systems
-                    adds another dependency.
-                </p>
-
-                <div class="metric-bar">
-                    <span data-level="82"></span>
-                </div>
-
-            </article>
-
-
-
-            <article
-                class="metric-card"
-                data-metric="duplication"
-            >
-
-                <div class="metric-top">
-
-                    <span>
-                        SIGNAL / 02
-                    </span>
-
-                    <span>
-                        DATA
-                    </span>
-
-                </div>
-
-                <div class="metric-value">
-                    D
-                </div>
-
-                <h3>
-                    DUPLICATION
-                </h3>
-
-                <p>
-                    Re-entering information creates
-                    parallel versions of the same
-                    business state.
-                </p>
-
-                <div class="metric-bar">
-                    <span data-level="67"></span>
-                </div>
-
-            </article>
-
-
-
-            <article
-                class="metric-card"
-                data-metric="latency"
-            >
-
-                <div class="metric-top">
-
-                    <span>
-                        SIGNAL / 03
-                    </span>
-
-                    <span>
-                        TIME
-                    </span>
-
-                </div>
-
-                <div class="metric-value">
-                    L
-                </div>
-
-                <h3>
-                    LATENCY
-                </h3>
-
-                <p>
-                    A workflow pauses whenever its
-                    next state depends on someone
-                    noticing and acting.
-                </p>
-
-                <div class="metric-bar">
-                    <span data-level="74"></span>
-                </div>
-
-            </article>
-
-
-
-            <article
-                class="metric-card"
-                data-metric="visibility"
-            >
-
-                <div class="metric-top">
-
-                    <span>
-                        SIGNAL / 04
-                    </span>
-
-                    <span>
-                        OBSERVABILITY
-                    </span>
-
-                </div>
-
-                <div class="metric-value">
-                    O
-                </div>
-
-                <h3>
-                    VISIBILITY
-                </h3>
-
-                <p>
-                    Manual workflows make it harder
-                    to reconstruct what happened,
-                    when and why.
-                </p>
-
-                <div class="metric-bar">
-                    <span data-level="58"></span>
-                </div>
-
-            </article>
-
-        </div>
-
-
-        <div
-            class="metric-note"
-            data-reveal
-        >
-
-            <span class="metric-note-index">
-                NOTE
-            </span>
-
-            <p>
-                These indicators are analytical categories,
-                not claimed performance statistics. Their
-                purpose is to expose where a workflow should
-                be measured before an automation decision is made.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     SYSTEM ARCHITECTURE
-========================================================= -->
-
-<section
-    class="architecture-section technical-section"
-    data-section="architecture"
->
-
-    <div class="container">
-
-
-        <div class="section-heading">
-
-            <div
-                class="section-index"
-                data-reveal
-            >
-                <span>04</span>
-                <span>SYSTEM ARCHITECTURE</span>
-            </div>
-
-
-            <div class="heading-content">
-
-                <p
-                    class="section-kicker"
-                    data-reveal
-                >
-                    FROM EVENT TO OUTPUT
-                </p>
-
-                <h2
-                    class="section-title"
-                    data-reveal
-                >
-                    Automation is not a button.
-                    It is a chain of state transitions.
-                </h2>
-
-                <p
-                    class="section-intro"
-                    data-reveal
-                >
-                    A reliable pipeline defines what enters the
-                    system, how it is validated, what logic decides
-                    the next state, which systems are called, and
-                    how the result is recorded.
-                </p>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- ARCHITECTURE VISUAL -->
-
-        <div
-            class="architecture-map"
-            data-reveal
-        >
-
-
-            <div class="architecture-line"></div>
-
-
-            <!-- NODE 01 -->
-
-            <button
-                class="architecture-node active"
-                type="button"
-                data-node="input"
-                aria-expanded="true"
-            >
-
-                <span class="architecture-index">
-                    01
-                </span>
-
-                <span class="architecture-icon">
-                    IN
-                </span>
-
-                <strong>
-                    INPUT
-                </strong>
-
-                <small>
-                    EVENT
-                </small>
-
-            </button>
-
-
-            <!-- NODE 02 -->
-
-            <button
-                class="architecture-node"
-                type="button"
-                data-node="validation"
-                aria-expanded="false"
-            >
-
-                <span class="architecture-index">
-                    02
-                </span>
-
-                <span class="architecture-icon">
-                    V
-                </span>
-
-                <strong>
-                    VALIDATE
-                </strong>
-
-                <small>
-                    DATA
-                </small>
-
-            </button>
-
-
-            <!-- NODE 03 -->
-
-            <button
-                class="architecture-node"
-                type="button"
-                data-node="logic"
-                aria-expanded="false"
-            >
-
-                <span class="architecture-index">
-                    03
-                </span>
-
-                <span class="architecture-icon">
-                    IF
-                </span>
-
-                <strong>
-                    LOGIC
-                </strong>
-
-                <small>
-                    RULE
-                </small>
-
-            </button>
-
-
-            <!-- NODE 04 -->
-
-            <button
-                class="architecture-node"
-                type="button"
-                data-node="api"
-                aria-expanded="false"
-            >
-
-                <span class="architecture-index">
-                    04
-                </span>
-
-                <span class="architecture-icon">
-                    API
-                </span>
-
-                <strong>
-                    INTEGRATE
-                </strong>
-
-                <small>
-                    SYSTEM
-                </small>
-
-            </button>
-
-
-            <!-- NODE 05 -->
-
-            <button
-                class="architecture-node"
-                type="button"
-                data-node="automation"
-                aria-expanded="false"
-            >
-
-                <span class="architecture-index">
-                    05
-                </span>
-
-                <span class="architecture-icon">
-                    →
-                </span>
-
-                <strong>
-                    AUTOMATE
-                </strong>
-
-                <small>
-                    ACTION
-                </small>
-
-            </button>
-
-
-            <!-- NODE 06 -->
-
-            <button
-                class="architecture-node"
-                type="button"
-                data-node="logging"
-                aria-expanded="false"
-            >
-
-                <span class="architecture-index">
-                    06
-                </span>
-
-                <span class="architecture-icon">
-                    LOG
-                </span>
-
-                <strong>
-                    LOG
-                </strong>
-
-                <small>
-                    TRACE
-                </small>
-
-            </button>
-
-
-            <!-- NODE 07 -->
-
-            <button
-                class="architecture-node"
-                type="button"
-                data-node="output"
-                aria-expanded="false"
-            >
-
-                <span class="architecture-index">
-                    07
-                </span>
-
-                <span class="architecture-icon">
-                    OUT
-                </span>
-
-                <strong>
-                    OUTPUT
-                </strong>
-
-                <small>
-                    STATE
-                </small>
-
-            </button>
-
-        </div>
-
-
-
-        <!-- NODE INSPECTOR -->
-
-        <div
-            class="architecture-inspector"
-            id="architectureInspector"
-            data-reveal
-        >
-
-            <div class="architecture-inspector-header">
-
-                <span>
-                    NODE INSPECTOR
-                </span>
-
-                <span id="architectureNodeNumber">
-                    01 / INPUT
-                </span>
-
-            </div>
-
-
-            <div class="architecture-inspector-body">
-
-                <div>
-
-                    <span class="inspector-field">
-                        PURPOSE
-                    </span>
-
-                    <p id="architecturePurpose">
-                        Detect the event that begins
-                        the workflow.
-                    </p>
-
-                </div>
-
-
-                <div>
-
-                    <span class="inspector-field">
-                        EXAMPLE
-                    </span>
-
-                    <code id="architectureExample">
-                        form.submit
-                    </code>
-
-                </div>
-
-
-                <div>
-
-                    <span class="inspector-field">
-                        NEXT STATE
-                    </span>
-
-                    <code id="architectureNext">
-                        INPUT → VALIDATION
-                    </code>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     BOTTLENECK DEEP DIVE
-========================================================= -->
-
-<section
-    class="bottleneck-section technical-section"
-    data-section="bottlenecks"
->
-
-    <div class="container">
-
-
-        <div class="section-heading">
-
-            <div
-                class="section-index"
-                data-reveal
-            >
-                <span>05</span>
-                <span>BOTTLENECK ANALYSIS</span>
-            </div>
-
-
-            <div class="heading-content">
-
-                <p
-                    class="section-kicker"
-                    data-reveal
-                >
-                    FAILURE SURFACES
-                </p>
-
-                <h2
-                    class="section-title"
-                    data-reveal
-                >
-                    Find the queue.
-                    Then find the dependency.
-                </h2>
-
-            </div>
-
-        </div>
-
-
-
-        <div
-            class="bottleneck-grid"
-            data-reveal
-        >
-
-
-            <article
-                class="bottleneck-card"
-                data-bottleneck="01"
-            >
-
-                <div class="bottleneck-number">
-                    01
-                </div>
-
-                <div class="bottleneck-content">
-
-                    <span class="bottleneck-type">
-                        QUEUE
-                    </span>
-
-                    <h3>
-                        Waiting for someone
-                        to notice
-                    </h3>
-
-                    <p>
-                        If the next step begins only after
-                        a person sees an email, message or
-                        spreadsheet update, the workflow
-                        contains a human-triggered queue.
-                    </p>
-
-                </div>
-
-                <div class="bottleneck-signal">
-                    DETECT
-                </div>
-
-            </article>
-
-
-
-            <article
-                class="bottleneck-card"
-                data-bottleneck="02"
-            >
-
-                <div class="bottleneck-number">
-                    02
-                </div>
-
-                <div class="bottleneck-content">
-
-                    <span class="bottleneck-type">
-                        STATE
-                    </span>
-
-                    <h3>
-                        The same data
-                        changes location
-                    </h3>
-
-                    <p>
-                        Copying information from one system
-                        into another creates a second state
-                        that must remain synchronized.
-                    </p>
-
-                </div>
-
-                <div class="bottleneck-signal">
-                    TRACE
-                </div>
-
-            </article>
-
-
-
-            <article
-                class="bottleneck-card"
-                data-bottleneck="03"
-            >
-
-                <div class="bottleneck-number">
-                    03
-                </div>
-
-                <div class="bottleneck-content">
-
-                    <span class="bottleneck-type">
-                        LOGIC
-                    </span>
-
-                    <h3>
-                        Decisions exist only
-                        in someone's head
-                    </h3>
-
-                    <p>
-                        If a process depends on an employee
-                        remembering how to classify an event,
-                        the business rule is not encoded in
-                        the system.
-                    </p>
-
-                </div>
-
-                <div class="bottleneck-signal">
-                    MODEL
-                </div>
-
-            </article>
-
-
-
-            <article
-                class="bottleneck-card"
-                data-bottleneck="04"
-            >
-
-                <div class="bottleneck-number">
-                    04
-                </div>
-
-                <div class="bottleneck-content">
-
-                    <span class="bottleneck-type">
-                        OBSERVABILITY
-                    </span>
-
-                    <h3>
-                        The workflow leaves
-                        no useful trace
-                    </h3>
-
-                    <p>
-                        Without structured events, logs or
-                        timestamps, diagnosing a failure means
-                        reconstructing history manually.
-                    </p>
-
-                </div>
-
-                <div class="bottleneck-signal">
-                    LOG
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     AUTOMATION PATTERN
-========================================================= -->
-
-<section
-    class="pattern-section technical-section"
-    data-section="pattern"
->
-
-    <div class="container pattern-layout">
-
-
-        <div class="pattern-intro">
-
-            <div
-                class="section-index"
-                data-reveal
-            >
-                <span>06</span>
-                <span>AUTOMATION PATTERN</span>
-            </div>
-
-
-            <h2
-                class="section-title"
-                data-reveal
-            >
-                A useful automation
-                pattern is explicit.
-            </h2>
-
-
-            <p
-                data-reveal
-            >
-                The system should make the sequence visible:
-                trigger, validate, decide, act, verify, and
-                record.
-            </p>
-
-        </div>
-
-
-
-        <div
-            class="pattern-terminal"
-            data-reveal
-        >
-
-            <div class="terminal-header">
-
-                <span>
-                    pipeline.logic
-                </span>
-
-                <span>
-                    READ ONLY
-                </span>
-
-            </div>
-
-
-            <div class="terminal-body">
-
-                <div class="code-line">
-
-                    <span class="line-number">
-                        01
-                    </span>
-
-                    <span class="code-keyword">
-                        TRIGGER
-                    </span>
-
-                    <span>
-                        event.received
-                    </span>
-
-                </div>
-
-
-                <div class="code-line">
-
-                    <span class="line-number">
-                        02
-                    </span>
-
-                    <span class="code-keyword">
-                        VALIDATE
-                    </span>
-
-                    <span>
-                        payload.is_valid
-                    </span>
-
-                </div>
-
-
-                <div class="code-line">
-
-                    <span class="line-number">
-                        03
-                    </span>
-
-                    <span class="code-keyword">
-                        DECIDE
-                    </span>
-
-                    <span>
-                        rules.evaluate(payload)
-                    </span>
-
-                </div>
-
-
-                <div class="code-line">
-
-                    <span class="line-number">
-                        04
-                    </span>
-
-                    <span class="code-keyword">
-                        ACTION
-                    </span>
-
-                    <span>
-                        api.execute()
-                    </span>
-
-                </div>
-
-
-                <div class="code-line">
-
-                    <span class="line-number">
-                        05
-                    </span>
-
-                    <span class="code-keyword">
-                        VERIFY
-                    </span>
-
-                    <span>
-                        response.status
-                    </span>
-
-                </div>
-
-
-                <div class="code-line">
-
-                    <span class="line-number">
-                        06
-                    </span>
-
-                    <span class="code-keyword">
-                        LOG
-                    </span>
-
-                    <span>
-                        workflow.record()
-                    </span>
-
-                </div>
-
-
-                <div class="terminal-cursor">
-                    _
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     TECHNICAL TAKEAWAY
-========================================================= -->
-
-<section
-    class="takeaway-section technical-section"
-    data-section="takeaway"
->
-
-    <div class="container">
-
-
-        <div
-            class="takeaway-frame"
-            data-reveal
-        >
-
-            <div class="takeaway-header">
-
-                <span>
-                    TECHNICAL TAKEAWAY
-                </span>
-
-                <span>
-                    END / ANALYSIS
-                </span>
-
-            </div>
-
-
-            <div class="takeaway-body">
-
-                <div class="takeaway-mark">
-                    ∴
-                </div>
-
-
-                <div class="takeaway-content">
-
-                    <h2>
-                        Don't automate the task.
-                        Map the system first.
-                    </h2>
-
-
-                    <p>
-                        Before selecting software or building an
-                        automation, identify the inputs, state
-                        transitions, decision rules, integrations,
-                        failure paths and outputs.
-                    </p>
-
-
-                    <div class="takeaway-sequence">
-
-                        <span>
-                            INPUT
-                        </span>
-
-                        <i>→</i>
-
-                        <span>
-                            LOGIC
-                        </span>
-
-                        <i>→</i>
-
-                        <span>
-                            API
-                        </span>
-
-                        <i>→</i>
-
-                        <span>
-                            ACTION
-                        </span>
-
-                        <i>→</i>
-
-                        <span>
-                            OUTPUT
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     RESOURCE CTA
-========================================================= -->
-
-<section
-    class="resource-section technical-section"
-    data-section="resource"
->
-
-    <div class="container resource-layout">
-
-
-        <div class="resource-copy">
-
-            <span
-                class="section-kicker"
-                data-reveal
-            >
-                NEXT STEP
-            </span>
-
-
-            <h2
-                data-reveal
-            >
-                Have a workflow
-                you can't explain?
-            </h2>
-
-
-            <p
-                data-reveal
-            >
-                Start with the process map. Identify the
-                transitions. Find the manual dependencies.
-                Then determine which parts are actually
-                suitable for automation.
-            </p>
-
-        </div>
-
-
-        <div
-            class="resource-action"
-            data-reveal
-        >
-
-            <span class="resource-label">
-                TECHNICAL RESOURCE
-            </span>
-
+        <div class="container header-inner">
 
             <a
-                href="#comparison"
-                class="resource-link"
+                href="#top"
+                class="brand"
+                aria-label="Big Brain Way — return to top"
             >
 
-                <span>
-                    REVIEW THE SYSTEM
-                </span>
+                <img
+                    src="/image/BBW Logo.png"
+                    alt="Big Brain Way"
+                    class="brand-logo"
+                />
 
-                <span class="resource-arrow">
-                    →
+                <span class="brand-divider"></span>
+
+                <span class="brand-context">
+                    SYSTEMS ANALYSIS
                 </span>
 
             </a>
 
 
-            <small>
-                Returns to the interactive process analysis.
-            </small>
+            <div class="header-status">
 
-        </div>
+                <span class="status-indicator"></span>
 
-    </div>
-
-</section>
-
-
-
-</main>
-
-
-
-<!-- =========================================================
-     FOOTER
-========================================================= -->
-
-<footer class="site-footer">
-
-    <div class="container footer-grid">
-
-
-        <div class="footer-brand">
-
-            <img
-                src="/image/BBW Logo.png"
-                alt="Big Brain Way"
-            />
-
-            <p>
-                Technical systems analysis
-                for modern business operations.
-            </p>
-
-        </div>
-
-
-        <div class="footer-meta">
-
-            <div>
                 <span>
-                    RESOURCE TYPE
+                    TECHNICAL RESOURCE
                 </span>
 
-                <strong>
-                    TECHNICAL ANALYSIS
-                </strong>
-            </div>
-
-
-            <div>
-                <span>
-                    FORMAT
-                </span>
-
-                <strong>
-                    INTERACTIVE
-                </strong>
-            </div>
-
-
-            <div>
-                <span>
-                    VERSION
-                </span>
-
-                <strong>
-                    01.00
-                </strong>
             </div>
 
         </div>
 
-    </div>
-
-
-    <div class="container footer-bottom">
-
-        <span>
-            © {new Date().getFullYear()} Big Brain Way
-        </span>
-
-        <span>
-            SYSTEM / END
-        </span>
-
-    </div>
-
-</footer>
+    </header>
 
 
 
-<!-- =========================================================
-     MOBILE SECTION NAVIGATION
-========================================================= -->
+    <!-- =========================================================
+         MAIN
+    ========================================================= -->
 
-<nav
-    class="mobile-section-nav"
-    aria-label="Section navigation"
->
+    <main id="top">
 
-    <a href="#top">
-        TOP
-    </a>
 
-    <a href="#comparison">
-        PROCESS
-    </a>
+        <!-- =====================================================
+             HERO
+        ===================================================== -->
 
-    <a href="#comparison">
-        TABLE
-    </a>
+        <section
+            class="hero technical-section"
+            data-section="introduction"
+        >
 
-    <a href="#top">
+            <div class="container hero-grid">
+
+
+                <div class="hero-copy">
+
+                    <div
+                        class="eyebrow"
+                        data-reveal
+                    >
+                        TECHNICAL SYSTEMS ANALYSIS
+                    </div>
+
+
+                    <h1
+                        class="hero-title"
+                        data-reveal
+                    >
+                        Where Does Your
+                        <span>Workflow</span>
+                        Break?
+                    </h1>
+
+
+                    <p
+                        class="hero-description"
+                        data-reveal
+                    >
+                        Trace how manual work creates queues, duplicated state, hidden decisions
+                        and delayed actions — then see how an explicit pipeline changes
+                        the path from input to output.
+                    </p>
+
+
+                    <div
+                        class="hero-note"
+                        data-reveal
+                    >
+
+                        <span class="note-marker">
+                            /
+                        </span>
+
+                        <span>
+                            No pitch. No form. Just the system.
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- HERO SYSTEM MAP -->
+
+                <div
+                    class="hero-system"
+                    data-reveal
+                    aria-label="Workflow system overview"
+                >
+
+                    <div class="system-window">
+
+                        <div class="window-header">
+
+                            <div class="window-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span class="window-label">
+                                workflow.map
+                            </span>
+
+                            <span class="window-status">
+                                ACTIVE
+                            </span>
+
+                        </div>
+
+
+                        <div class="system-body">
+
+                            <div class="system-node input-node">
+                                <span class="node-index">01</span>
+                                <strong>INPUT</strong>
+                                <small>lead / request</small>
+                            </div>
+
+
+                            <div class="system-connector">
+                                <span></span>
+                            </div>
+
+
+                            <div class="system-node">
+                                <span class="node-index">02</span>
+                                <strong>PROCESS</strong>
+                                <small>human decision</small>
+                            </div>
+
+
+                            <div class="system-connector">
+                                <span></span>
+                            </div>
+
+
+                            <div class="system-node">
+                                <span class="node-index">03</span>
+                                <strong>TRANSFER</strong>
+                                <small>copy / paste</small>
+                            </div>
+
+
+                            <div class="system-connector">
+                                <span></span>
+                            </div>
+
+
+                            <div class="system-node output-node">
+                                <span class="node-index">04</span>
+                                <strong>OUTPUT</strong>
+                                <small>action / result</small>
+                            </div>
+
+                        </div>
+
+
+                        <div class="system-footer">
+
+                            <span>
+                                PATH: MANUAL
+                            </span>
+
+                            <span>
+                                FRICTION: DETECTABLE
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="container hero-meta">
+
+                <div class="meta-item">
+                    <span>DOCUMENT</span>
+                    <strong>01 / 10</strong>
+                </div>
+
+                <div class="meta-item">
+                    <span>SUBJECT</span>
+                    <strong>OPERATIONS</strong>
+                </div>
+
+                <div class="meta-item">
+                    <span>METHOD</span>
+                    <strong>SYSTEM MAPPING</strong>
+                </div>
+
+                <div class="meta-item">
+                    <span>STATUS</span>
+                    <strong>ANALYSIS</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             INTRODUCTION
+        ===================================================== -->
+
+        <section
+            class="intro-section technical-section"
+            data-section="context"
+        >
+
+            <div class="container intro-grid">
+
+
+                <div
+                    class="section-index"
+                    data-reveal
+                >
+                    <span>01</span>
+                    <span>CONTEXT</span>
+                </div>
+
+
+                <div class="intro-content">
+
+                    <h2
+                        class="section-title"
+                        data-reveal
+                    >
+                        Most operational problems
+                        are not people problems.
+                        They are <em>system problems.</em>
+                    </h2>
+
+
+                    <div
+                        class="intro-columns"
+                        data-reveal
+                    >
+
+                        <p>
+                            A workflow can appear simple from the outside:
+                            receive information, make a decision, update a
+                            system, notify someone, and move to the next task.
+                        </p>
+
+                        <p>
+                            But when those transitions depend on manual
+                            intervention, every handoff introduces another
+                            opportunity for delay, duplication, omission,
+                            or inconsistent execution.
+                        </p>
+
+                    </div>
+
+
+                    <div
+                        class="technical-callout"
+                        data-reveal
+                    >
+
+                        <span class="callout-symbol">
+                            &gt;_
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                The useful question is not:
+                            </strong>
+
+                            <p>
+                                "Can this task be automated?"
+                            </p>
+
+                            <strong>
+                                The better question is:
+                            </strong>
+
+                            <p>
+                                "Where does information change state,
+                                and what is responsible for that transition?"
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             COMPARISON TABLE
+        ===================================================== -->
+
+        <section
+            class="comparison-section technical-section"
+            id="comparison"
+            data-section="comparison"
+        >
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <div
+                        class="section-index"
+                        data-reveal
+                    >
+                        <span>02</span>
+                        <span>PROCESS ANALYSIS</span>
+                    </div>
+
+
+                    <div class="heading-content">
+
+                        <p
+                            class="section-kicker"
+                            data-reveal
+                        >
+                            MANUAL VS AUTOMATED
+                        </p>
+
+                        <h2
+                            class="section-title"
+                            data-reveal
+                        >
+                            Same business process.
+                            Different system architecture.
+                        </h2>
+
+                        <p
+                            class="section-intro"
+                            data-reveal
+                        >
+                            Select or hover over a row to inspect where
+                            manual intervention introduces friction and
+                            how the equivalent automated pipeline handles
+                            the same state transition.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="comparison-controls"
+                    data-reveal
+                    role="group"
+                    aria-label="Comparison filters"
+                >
+
+                    <button
+                        class="comparison-filter active"
+                        type="button"
+                        data-filter="all"
+                        aria-pressed="true"
+                    >
+                        ALL PROCESSES
+                    </button>
+
+                    <button
+                        class="comparison-filter"
+                        type="button"
+                        data-filter="input"
+                        aria-pressed="false"
+                    >
+                        INPUT
+                    </button>
+
+                    <button
+                        class="comparison-filter"
+                        type="button"
+                        data-filter="logic"
+                        aria-pressed="false"
+                    >
+                        LOGIC
+                    </button>
+
+                    <button
+                        class="comparison-filter"
+                        type="button"
+                        data-filter="action"
+                        aria-pressed="false"
+                    >
+                        ACTION
+                    </button>
+
+                    <button
+                        class="comparison-filter"
+                        type="button"
+                        data-filter="output"
+                        aria-pressed="false"
+                    >
+                        OUTPUT
+                    </button>
+
+                </div>
+
+
+                <p
+                    class="comparison-swipe-hint"
+                    aria-hidden="true"
+                >
+                    ← SWIPE TO COMPARE →
+                </p>
+
+
+                <div
+                    class="comparison-wrapper"
+                    data-reveal
+                >
+
+                    <table class="comparison-table">
+
+                        <caption>
+                            Manual business operations compared with
+                            automated pipeline architecture.
+                        </caption>
+
+
+                        <thead>
+
+                            <tr>
+
+                                <th scope="col">
+                                    PROCESS
+                                </th>
+
+                                <th
+                                    scope="col"
+                                    class="manual-column"
+                                >
+                                    MANUAL
+                                    <span>
+                                        HUMAN-DEPENDENT
+                                    </span>
+                                </th>
+
+                                <th
+                                    scope="col"
+                                    class="friction-column"
+                                >
+                                    FRICTION
+                                    <span>
+                                        FAILURE SURFACE
+                                    </span>
+                                </th>
+
+                                <th
+                                    scope="col"
+                                    class="automated-column"
+                                >
+                                    AUTOMATED
+                                    <span>
+                                        PIPELINE
+                                    </span>
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr
+                                data-category="input"
+                                data-process="lead-intake"
+                                tabindex="0"
+                            >
+
+                                <th scope="row">
+
+                                    <span class="row-number">
+                                        01
+                                    </span>
+
+                                    Lead intake
+
+                                </th>
+
+                                <td class="manual-cell">
+                                    Monitor inbox,
+                                    forms, messages or calls.
+                                </td>
+
+                                <td class="friction-cell">
+                                    Information can arrive
+                                    through disconnected channels.
+                                </td>
+
+                                <td class="automated-cell">
+                                    Trigger captures incoming
+                                    event and normalizes payload.
+                                </td>
+
+                            </tr>
+
+
+                            <tr
+                                data-category="input"
+                                data-process="data-entry"
+                                tabindex="0"
+                            >
+
+                                <th scope="row">
+
+                                    <span class="row-number">
+                                        02
+                                    </span>
+
+                                    Data entry
+
+                                </th>
+
+                                <td class="manual-cell">
+                                    Employee reads information
+                                    and re-enters it elsewhere.
+                                </td>
+
+                                <td class="friction-cell">
+                                    Duplicate work creates
+                                    transcription risk.
+                                </td>
+
+                                <td class="automated-cell">
+                                    Structured payload moves
+                                    directly between systems.
+                                </td>
+
+                            </tr>
+
+
+                            <tr
+                                data-category="logic"
+                                data-process="qualification"
+                                tabindex="0"
+                            >
+
+                                <th scope="row">
+
+                                    <span class="row-number">
+                                        03
+                                    </span>
+
+                                    Qualification
+
+                                </th>
+
+                                <td class="manual-cell">
+                                    Employee checks criteria
+                                    and decides what happens next.
+                                </td>
+
+                                <td class="friction-cell">
+                                    Decision logic may vary
+                                    between employees.
+                                </td>
+
+                                <td class="automated-cell">
+                                    Conditions evaluate structured
+                                    data against defined rules.
+                                </td>
+
+                            </tr>
+
+
+                            <tr
+                                data-category="action"
+                                data-process="follow-up"
+                                tabindex="0"
+                            >
+
+                                <th scope="row">
+
+                                    <span class="row-number">
+                                        04
+                                    </span>
+
+                                    Follow-up
+
+                                </th>
+
+                                <td class="manual-cell">
+                                    Employee remembers,
+                                    writes and sends response.
+                                </td>
+
+                                <td class="friction-cell">
+                                    Response timing depends
+                                    on human availability.
+                                </td>
+
+                                <td class="automated-cell">
+                                    Event triggers predefined
+                                    response or task creation.
+                                </td>
+
+                            </tr>
+
+
+                            <tr
+                                data-category="action"
+                                data-process="crm-update"
+                                tabindex="0"
+                            >
+
+                                <th scope="row">
+
+                                    <span class="row-number">
+                                        05
+                                    </span>
+
+                                    CRM update
+
+                                </th>
+
+                                <td class="manual-cell">
+                                    Employee copies details
+                                    into the CRM.
+                                </td>
+
+                                <td class="friction-cell">
+                                    CRM state can become
+                                    inconsistent with source data.
+                                </td>
+
+                                <td class="automated-cell">
+                                    API request creates or updates
+                                    the record programmatically.
+                                </td>
+
+                            </tr>
+
+
+                            <tr
+                                data-category="action"
+                                data-process="quote"
+                                tabindex="0"
+                            >
+
+                                <th scope="row">
+
+                                    <span class="row-number">
+                                        06
+                                    </span>
+
+                                    Quote generation
+
+                                </th>
+
+                                <td class="manual-cell">
+                                    Employee gathers inputs,
+                                    calculates and prepares document.
+                                </td>
+
+                                <td class="friction-cell">
+                                    Repeated preparation increases
+                                    process variability.
+                                </td>
+
+                                <td class="automated-cell">
+                                    Validated inputs populate
+                                    a predefined generation pipeline.
+                                </td>
+
+                            </tr>
+
+
+                            <tr
+                                data-category="output"
+                                data-process="notification"
+                                tabindex="0"
+                            >
+
+                                <th scope="row">
+
+                                    <span class="row-number">
+                                        07
+                                    </span>
+
+                                    Notification
+
+                                </th>
+
+                                <td class="manual-cell">
+                                    Employee informs the
+                                    next person or team.
+                                </td>
+
+                                <td class="friction-cell">
+                                    Handoffs can become
+                                    invisible queue points.
+                                </td>
+
+                                <td class="automated-cell">
+                                    System emits event,
+                                    message or task automatically.
+                                </td>
+
+                            </tr>
+
+
+                            <tr
+                                data-category="output"
+                                data-process="reporting"
+                                tabindex="0"
+                            >
+
+                                <th scope="row">
+
+                                    <span class="row-number">
+                                        08
+                                    </span>
+
+                                    Reporting
+
+                                </th>
+
+                                <td class="manual-cell">
+                                    Data is collected,
+                                    cleaned and assembled periodically.
+                                </td>
+
+                                <td class="friction-cell">
+                                    Reporting becomes a
+                                    second process to maintain.
+                                </td>
+
+                                <td class="automated-cell">
+                                    Events are logged as they occur
+                                    and can feed a live data layer.
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <aside
+                    class="process-inspector"
+                    id="processInspector"
+                    aria-live="polite"
+                    data-reveal
+                >
+
+                    <div class="inspector-label">
+                        SELECTED PROCESS
+                    </div>
+
+                    <div class="inspector-content">
+
+                        <strong id="inspectorTitle">
+                            Lead intake
+                        </strong>
+
+                        <p id="inspectorDescription">
+                            Select a process row to inspect its
+                            technical transition.
+                        </p>
+
+                    </div>
+
+                    <div class="inspector-code">
+
+                        <span>STATE</span>
+
+                        <code id="inspectorCode">
+                            INPUT → PROCESS
+                        </code>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             FRICTION ANALYSIS
+        ===================================================== -->
+
+        <section
+            class="metrics-section technical-section"
+            data-section="friction"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div
+                        class="section-index"
+                        data-reveal
+                    >
+                        <span>03</span>
+                        <span>FRICTION ANALYSIS</span>
+                    </div>
+
+                    <div class="heading-content">
+
+                        <p
+                            class="section-kicker"
+                            data-reveal
+                        >
+                            WHERE WORK ACCUMULATES
+                        </p>
+
+                        <h2
+                            class="section-title"
+                            data-reveal
+                        >
+                            Every manual handoff
+                            creates another surface
+                            for failure.
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="metric-grid"
+                    data-reveal
+                >
+
+                    <article
+                        class="metric-card"
+                        data-metric="handoffs"
+                    >
+
+                        <div class="metric-top">
+                            <span>SIGNAL / 01</span>
+                            <span>HUMAN</span>
+                        </div>
+
+                        <div class="metric-value">
+                            HIGH
+                        </div>
+
+                        <h3>
+                            HANDOFFS
+                        </h3>
+
+                        <p>
+                            Every transfer between people,
+                            inboxes, spreadsheets or systems
+                            adds another dependency.
+                        </p>
+
+                        <div
+                            class="metric-signal"
+                            data-level="high"
+                            aria-label="Illustrative dependency level: high"
+                        >
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="metric-card"
+                        data-metric="duplication"
+                    >
+
+                        <div class="metric-top">
+                            <span>SIGNAL / 02</span>
+                            <span>DATA</span>
+                        </div>
+
+                        <div class="metric-value">
+                            HIGH
+                        </div>
+
+                        <h3>
+                            DUPLICATION
+                        </h3>
+
+                        <p>
+                            Re-entering information creates
+                            parallel versions of the same
+                            business state.
+                        </p>
+
+                        <div
+                            class="metric-signal"
+                            data-level="high"
+                            aria-label="Illustrative dependency level: high"
+                        >
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="metric-card"
+                        data-metric="latency"
+                    >
+
+                        <div class="metric-top">
+                            <span>SIGNAL / 03</span>
+                            <span>TIME</span>
+                        </div>
+
+                        <div class="metric-value">
+                            ELEVATED
+                        </div>
+
+                        <h3>
+                            LATENCY
+                        </h3>
+
+                        <p>
+                            A workflow pauses whenever its
+                            next state depends on someone
+                            noticing and acting.
+                        </p>
+
+                        <div
+                            class="metric-signal"
+                            data-level="elevated"
+                            aria-label="Illustrative dependency level: elevated"
+                        >
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="metric-card"
+                        data-metric="visibility"
+                    >
+
+                        <div class="metric-top">
+                            <span>SIGNAL / 04</span>
+                            <span>OBSERVABILITY</span>
+                        </div>
+
+                        <div class="metric-value">
+                            VARIABLE
+                        </div>
+
+                        <h3>
+                            VISIBILITY
+                        </h3>
+
+                        <p>
+                            Manual workflows make it harder
+                            to reconstruct what happened,
+                            when and why.
+                        </p>
+
+                        <div
+                            class="metric-signal"
+                            data-level="variable"
+                            aria-label="Illustrative dependency level: variable"
+                        >
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div
+                    class="metric-note"
+                    data-reveal
+                >
+
+                    <span class="metric-note-index">
+                        NOTE
+                    </span>
+
+                    <p>
+                        These are illustrative dependency signals, not performance scores.
+                        They show where a workflow deserves measurement before an
+                        automation decision is made.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             SYSTEM ARCHITECTURE
+        ===================================================== -->
+
+        <section
+            class="architecture-section technical-section"
+            id="architecture"
+            data-section="architecture"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div
+                        class="section-index"
+                        data-reveal
+                    >
+                        <span>04</span>
+                        <span>SYSTEM ARCHITECTURE</span>
+                    </div>
+
+                    <div class="heading-content">
+
+                        <p
+                            class="section-kicker"
+                            data-reveal
+                        >
+                            FROM EVENT TO OUTPUT
+                        </p>
+
+                        <h2
+                            class="section-title"
+                            data-reveal
+                        >
+                            Automation is not a button.
+                            It is a chain of state transitions.
+                        </h2>
+
+                        <p
+                            class="section-intro"
+                            data-reveal
+                        >
+                            A reliable pipeline defines what enters the
+                            system, how it is validated, what logic decides
+                            the next state, which systems are called, and
+                            how the result is recorded.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="architecture-map"
+                    data-reveal
+                >
+
+                    <div class="architecture-line"></div>
+
+
+                    <button
+                        class="architecture-node active"
+                        type="button"
+                        data-node="input"
+                        aria-pressed="true"
+                    >
+                        <span class="architecture-index">01</span>
+                        <span class="architecture-icon">IN</span>
+                        <strong>INPUT</strong>
+                        <small>EVENT</small>
+                    </button>
+
+
+                    <button
+                        class="architecture-node"
+                        type="button"
+                        data-node="validation"
+                        aria-pressed="false"
+                    >
+                        <span class="architecture-index">02</span>
+                        <span class="architecture-icon">V</span>
+                        <strong>VALIDATE</strong>
+                        <small>DATA</small>
+                    </button>
+
+
+                    <button
+                        class="architecture-node"
+                        type="button"
+                        data-node="logic"
+                        aria-pressed="false"
+                    >
+                        <span class="architecture-index">03</span>
+                        <span class="architecture-icon">IF</span>
+                        <strong>LOGIC</strong>
+                        <small>RULE</small>
+                    </button>
+
+
+                    <button
+                        class="architecture-node"
+                        type="button"
+                        data-node="api"
+                        aria-pressed="false"
+                    >
+                        <span class="architecture-index">04</span>
+                        <span class="architecture-icon">API</span>
+                        <strong>INTEGRATE</strong>
+                        <small>SYSTEM</small>
+                    </button>
+
+
+                    <button
+                        class="architecture-node"
+                        type="button"
+                        data-node="automation"
+                        aria-pressed="false"
+                    >
+                        <span class="architecture-index">05</span>
+                        <span class="architecture-icon">→</span>
+                        <strong>AUTOMATE</strong>
+                        <small>ACTION</small>
+                    </button>
+
+
+                    <button
+                        class="architecture-node"
+                        type="button"
+                        data-node="logging"
+                        aria-pressed="false"
+                    >
+                        <span class="architecture-index">06</span>
+                        <span class="architecture-icon">LOG</span>
+                        <strong>LOG</strong>
+                        <small>TRACE</small>
+                    </button>
+
+
+                    <button
+                        class="architecture-node"
+                        type="button"
+                        data-node="output"
+                        aria-pressed="false"
+                    >
+                        <span class="architecture-index">07</span>
+                        <span class="architecture-icon">OUT</span>
+                        <strong>OUTPUT</strong>
+                        <small>STATE</small>
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="architecture-inspector"
+                    id="architectureInspector"
+                    data-reveal
+                >
+
+                    <div class="architecture-inspector-header">
+
+                        <span>
+                            NODE INSPECTOR
+                        </span>
+
+                        <span id="architectureNodeNumber">
+                            01 / INPUT
+                        </span>
+
+                    </div>
+
+
+                    <div class="architecture-inspector-body">
+
+                        <div>
+
+                            <span class="inspector-field">
+                                PURPOSE
+                            </span>
+
+                            <p id="architecturePurpose">
+                                Detect the event that begins
+                                the workflow.
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <span class="inspector-field">
+                                EXAMPLE
+                            </span>
+
+                            <code id="architectureExample">
+                                form.submit
+                            </code>
+
+                        </div>
+
+
+                        <div>
+
+                            <span class="inspector-field">
+                                NEXT STATE
+                            </span>
+
+                            <code id="architectureNext">
+                                INPUT → VALIDATION
+                            </code>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             WORKED WORKFLOW EXAMPLE
+        ===================================================== -->
+
+        <section
+            class="workflow-example-section technical-section"
+            id="workflow-example"
+            data-section="example"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div class="section-index" data-reveal>
+                        <span>05</span>
+                        <span>WORKED EXAMPLE</span>
+                    </div>
+
+                    <div class="heading-content">
+
+                        <p class="section-kicker" data-reveal>
+                            FROM THEORY TO A REAL PATH
+                        </p>
+
+                        <h2 class="section-title" data-reveal>
+                            Follow one workflow from event to recorded result.
+                        </h2>
+
+                        <p class="section-intro" data-reveal>
+                            The same mapping logic can be applied to an incoming lead:
+                            capture the event, validate the data, apply the rule, update
+                            the system, trigger the next action, and leave a trace.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="workflow-example" data-reveal>
+
+                    <div
+                        class="workflow-track"
+                        aria-label="Worked lead workflow"
+                    >
+
+                        <article class="workflow-step">
+                            <span>01</span>
+                            <strong>RECEIVE</strong>
+                            <small>FORM / MESSAGE</small>
+                        </article>
+
+                        <i aria-hidden="true">→</i>
+
+                        <article class="workflow-step">
+                            <span>02</span>
+                            <strong>VALIDATE</strong>
+                            <small>CHECK INPUT</small>
+                        </article>
+
+                        <i aria-hidden="true">→</i>
+
+                        <article class="workflow-step">
+                            <span>03</span>
+                            <strong>CLASSIFY</strong>
+                            <small>APPLY RULE</small>
+                        </article>
+
+                        <i aria-hidden="true">→</i>
+
+                        <article class="workflow-step">
+                            <span>04</span>
+                            <strong>UPDATE</strong>
+                            <small>CRM / RECORD</small>
+                        </article>
+
+                        <i aria-hidden="true">→</i>
+
+                        <article class="workflow-step">
+                            <span>05</span>
+                            <strong>ACT</strong>
+                            <small>RESPONSE / TASK</small>
+                        </article>
+
+                        <i aria-hidden="true">→</i>
+
+                        <article class="workflow-step">
+                            <span>06</span>
+                            <strong>LOG</strong>
+                            <small>EVENT TRACE</small>
+                        </article>
+
+                    </div>
+
+
+                    <div class="workflow-lesson">
+
+                        <span class="workflow-lesson-label">
+                            SYSTEM CHECK
+                        </span>
+
+                        <p>
+                            If any step still depends on someone noticing, copying, deciding or remembering,
+                            the manual dependency is visible in the map. That is the point to measure —
+                            not the point to blindly automate.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             BOTTLENECK DEEP DIVE
+        ===================================================== -->
+
+        <section
+            class="bottleneck-section technical-section"
+            data-section="bottlenecks"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div
+                        class="section-index"
+                        data-reveal
+                    >
+                        <span>06</span>
+                        <span>BOTTLENECK ANALYSIS</span>
+                    </div>
+
+                    <div class="heading-content">
+
+                        <p
+                            class="section-kicker"
+                            data-reveal
+                        >
+                            FAILURE SURFACES
+                        </p>
+
+                        <h2
+                            class="section-title"
+                            data-reveal
+                        >
+                            Find the queue.
+                            Then find the dependency.
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="bottleneck-grid"
+                    data-reveal
+                >
+
+                    <article
+                        class="bottleneck-card"
+                        data-bottleneck="01"
+                    >
+
+                        <div class="bottleneck-number">
+                            01
+                        </div>
+
+                        <div class="bottleneck-content">
+
+                            <span class="bottleneck-type">
+                                QUEUE
+                            </span>
+
+                            <h3>
+                                Waiting for someone
+                                to notice
+                            </h3>
+
+                            <p>
+                                If the next step begins only after
+                                a person sees an email, message or
+                                spreadsheet update, the workflow
+                                contains a human-triggered queue.
+                            </p>
+
+                        </div>
+
+                        <div class="bottleneck-signal">
+                            DETECT
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="bottleneck-card"
+                        data-bottleneck="02"
+                    >
+
+                        <div class="bottleneck-number">
+                            02
+                        </div>
+
+                        <div class="bottleneck-content">
+
+                            <span class="bottleneck-type">
+                                STATE
+                            </span>
+
+                            <h3>
+                                The same data
+                                changes location
+                            </h3>
+
+                            <p>
+                                Copying information from one system
+                                into another creates a second state
+                                that must remain synchronized.
+                            </p>
+
+                        </div>
+
+                        <div class="bottleneck-signal">
+                            TRACE
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="bottleneck-card"
+                        data-bottleneck="03"
+                    >
+
+                        <div class="bottleneck-number">
+                            03
+                        </div>
+
+                        <div class="bottleneck-content">
+
+                            <span class="bottleneck-type">
+                                LOGIC
+                            </span>
+
+                            <h3>
+                                Decisions exist only
+                                in someone's head
+                            </h3>
+
+                            <p>
+                                If a process depends on an employee
+                                remembering how to classify an event,
+                                the business rule is not encoded in
+                                the system.
+                            </p>
+
+                        </div>
+
+                        <div class="bottleneck-signal">
+                            MODEL
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="bottleneck-card"
+                        data-bottleneck="04"
+                    >
+
+                        <div class="bottleneck-number">
+                            04
+                        </div>
+
+                        <div class="bottleneck-content">
+
+                            <span class="bottleneck-type">
+                                OBSERVABILITY
+                            </span>
+
+                            <h3>
+                                The workflow leaves
+                                no useful trace
+                            </h3>
+
+                            <p>
+                                Without structured events, logs or
+                                timestamps, diagnosing a failure means
+                                reconstructing history manually.
+                            </p>
+
+                        </div>
+
+                        <div class="bottleneck-signal">
+                            LOG
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             AUTOMATION PATTERN
+        ===================================================== -->
+
+        <section
+            class="pattern-section technical-section"
+            data-section="pattern"
+        >
+
+            <div class="container pattern-layout">
+
+                <div class="pattern-intro">
+
+                    <div
+                        class="section-index"
+                        data-reveal
+                    >
+                        <span>07</span>
+                        <span>AUTOMATION PATTERN</span>
+                    </div>
+
+
+                    <h2
+                        class="section-title"
+                        data-reveal
+                    >
+                        A useful automation
+                        pattern is explicit.
+                    </h2>
+
+
+                    <p data-reveal>
+                        The system should make the sequence visible:
+                        trigger, validate, decide, act, verify, and
+                        record.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="pattern-terminal"
+                    data-reveal
+                >
+
+                    <div class="terminal-header">
+
+                        <span>
+                            pipeline.logic
+                        </span>
+
+                        <span>
+                            READ ONLY
+                        </span>
+
+                    </div>
+
+
+                    <div class="terminal-body">
+
+                        <div class="code-line">
+                            <span class="line-number">01</span>
+                            <span class="code-keyword">TRIGGER</span>
+                            <span>event.received</span>
+                        </div>
+
+                        <div class="code-line">
+                            <span class="line-number">02</span>
+                            <span class="code-keyword">VALIDATE</span>
+                            <span>payload.is_valid</span>
+                        </div>
+
+                        <div class="code-line">
+                            <span class="line-number">03</span>
+                            <span class="code-keyword">DECIDE</span>
+                            <span>rules.evaluate(payload)</span>
+                        </div>
+
+                        <div class="code-line">
+                            <span class="line-number">04</span>
+                            <span class="code-keyword">ACTION</span>
+                            <span>api.execute()</span>
+                        </div>
+
+                        <div class="code-line">
+                            <span class="line-number">05</span>
+                            <span class="code-keyword">VERIFY</span>
+                            <span>response.status</span>
+                        </div>
+
+                        <div class="code-line">
+                            <span class="line-number">06</span>
+                            <span class="code-keyword">LOG</span>
+                            <span>workflow.record()</span>
+                        </div>
+
+                        <div class="terminal-cursor">
+                            _
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             TECHNICAL TAKEAWAY
+        ===================================================== -->
+
+        <section
+            class="takeaway-section technical-section"
+            data-section="takeaway"
+        >
+
+            <div class="container">
+
+                <div
+                    class="takeaway-frame"
+                    data-reveal
+                >
+
+                    <div class="takeaway-header">
+
+                        <span>
+                            TECHNICAL TAKEAWAY
+                        </span>
+
+                        <span>
+                            END / ANALYSIS
+                        </span>
+
+                    </div>
+
+
+                    <div class="takeaway-body">
+
+                        <div class="takeaway-mark">
+                            ∴
+                        </div>
+
+
+                        <div class="takeaway-content">
+
+                            <h2>
+                                Don't automate the task.
+                                Map the system first.
+                            </h2>
+
+
+                            <p>
+                                Before selecting software or building an
+                                automation, identify the inputs, state
+                                transitions, decision rules, integrations,
+                                failure paths and outputs.
+                            </p>
+
+
+                            <div class="takeaway-sequence">
+
+                                <span>INPUT</span>
+                                <i>→</i>
+                                <span>LOGIC</span>
+                                <i>→</i>
+                                <span>API</span>
+                                <i>→</i>
+                                <span>ACTION</span>
+                                <i>→</i>
+                                <span>OUTPUT</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             RESOURCE CTA
+        ===================================================== -->
+
+        <section
+            class="resource-section technical-section"
+            data-section="resource"
+        >
+
+            <div class="container resource-layout">
+
+                <div class="resource-copy">
+
+                    <span
+                        class="section-kicker"
+                        data-reveal
+                    >
+                        NEXT STEP
+                    </span>
+
+
+                    <h2 data-reveal>
+                        Have a workflow
+                        you can't explain?
+                    </h2>
+
+
+                    <p data-reveal>
+                        Start with the process map. Identify the
+                        transitions. Find the manual dependencies.
+                        Then determine which parts are actually
+                        suitable for automation.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="resource-action"
+                    data-reveal
+                >
+
+                    <span class="resource-label">
+                        TECHNICAL RESOURCE
+                    </span>
+
+
+                    <a
+                        href="#workflow-example"
+                        class="resource-link"
+                    >
+
+                        <span>
+                            MAP A WORKFLOW
+                        </span>
+
+                        <span class="resource-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <small>
+                        Apply the same system-mapping sequence to a real workflow.
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================= -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <img
+                    src="/image/BBW Logo.png"
+                    alt="Big Brain Way"
+                />
+
+                <p>
+                    Technical systems analysis
+                    for modern business operations.
+                </p>
+
+            </div>
+
+
+            <div class="footer-meta">
+
+                <div>
+                    <span>
+                        RESOURCE TYPE
+                    </span>
+
+                    <strong>
+                        TECHNICAL ANALYSIS
+                    </strong>
+                </div>
+
+
+                <div>
+                    <span>
+                        FORMAT
+                    </span>
+
+                    <strong>
+                        INTERACTIVE
+                    </strong>
+                </div>
+
+
+                <div>
+                    <span>
+                        VERSION
+                    </span>
+
+                    <strong>
+                        01.00
+                    </strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="container footer-bottom">
+
+            <span>
+                © {new Date().getFullYear()} Big Brain Way
+            </span>
+
+            <span>
+                SYSTEM / END
+            </span>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================================================
+         MOBILE SECTION NAVIGATION
+    ========================================================= -->
+
+    <nav
+        class="mobile-section-nav"
+        aria-label="Section navigation"
+    >
+
+        <a href="#top">
+            TOP
+        </a>
+
+        <a href="#comparison">
+            COMPARE
+        </a>
+
+        <a href="#architecture">
+            SYSTEM
+        </a>
+
+        <a href="#top">
+            ↑
+        </a>
+
+    </nav>
+
+
+
+    <!-- =========================================================
+         BACK TO TOP
+    ========================================================= -->
+
+    <button
+        class="back-to-top"
+        id="backToTop"
+        type="button"
+        aria-label="Back to top"
+    >
         ↑
-    </a>
-
-</nav>
-
-
-
-<!-- =========================================================
-     BACK TO TOP
-========================================================= -->
-
-<button
-    class="back-to-top"
-    id="backToTop"
-    type="button"
-    aria-label="Back to top"
->
-    ↑
-</button>
-
-
-
-<!-- =========================================================
-     JAVASCRIPT
-     Kept separate intentionally.
-========================================================= -->
+    </button>
 
 <script>
     import "../scripts/script.js";
 </script>
 
-</body>
-</html>
+
+</Layout>
